@@ -178,7 +178,7 @@ p2df = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in p2Source.items() ])).melt(
 
 p1df = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in p1Source.items() ])).melt(var_name = 'p1', value_name = 'p0').drop_duplicates().dropna().reset_index(drop = True)
 
-p0df = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in p0Source.items() ])).melt(var_name = 'p0', value_name = 'resource').drop_duplicates().dropna().reset_index(drop = True)
+p0df = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in p0Source.items() ])).melt(var_name = 'p0', value_name = 'planet').drop_duplicates().dropna().reset_index(drop = True)
 
 
 p4necessities = pd.merge(p4df,p3df,on='p3',how='inner')
@@ -188,21 +188,15 @@ p4necessities = pd.merge(p4necessities,p1df,on='p1',how='inner')
 
 p3necessities = pd.merge(p3df,p2df,on='p2',how='inner')
 p3necessities = pd.merge(p3necessities,p1df,on='p1',how='inner')
+p3necessities = pd.merge(p3necessities,p0df,on='p0',how='inner')
 
 
 p2necessities = pd.merge(p2df,p1df,on='p1',how='inner')
 p2necessities = pd.merge(p2necessities,p0df,on='p0',how='inner')
 
-test = pd.merge(p2necessities,p2necessities,on='p2', how='inner')
 
-test = test[test['p0_x'] != test['p0_y']]
-test['necessary'] = test[['resource_x','resource_y']].values.tolist()
 
-mylist = test['necessary'].tolist()
-
-for i in mylist:
-    print(i)
-    break
+test = p3necessities[p3necessities['p3']=="Robotics"]
 
 
 
