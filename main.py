@@ -46,4 +46,17 @@ test = get_p_zero_requirements()
 
 print(test['test_results'])
 
-#TODO: work on getting the correct system now that you have a list of all the planets needed and all the planets present
+planets_requirements = test['p_zero_requirements']
+
+df_planets_requirement = pd.melt(pd.DataFrame(planets_requirements).reset_index(), id_vars = 'index').drop('variable', axis=1)
+
+df_planets_requirement = df_planets_requirement.groupby(['index','value'])['value'].count()
+
+df_planets_requirement = pd.DataFrame(df_planets_requirement)
+
+df_planets_requirement.columns = ['count']
+
+df_planets_requirement = df_planets_requirement.reset_index()
+
+
+#TODO: work on getting the correct system now that you have a list of all tbhe planets needed and all the planets present
