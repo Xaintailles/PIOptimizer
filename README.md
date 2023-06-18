@@ -1,4 +1,4 @@
-#PI Optimizer
+# PI Optimizer
 
 ## Goal
 Written in super basic python.
