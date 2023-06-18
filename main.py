@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Feb 20 00:20:35 2022
-
-@author: Gebruiker
+@author: Xaintailles
 """
 
 #Regionid to regionname: https://gist.github.com/mentos1386/8192dba4f124395c0d7f
