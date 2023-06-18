@@ -1,0 +1,42 @@
+{
+   "Broadcast Node":[
+      "Data Chips",
+      "High-Tech Transmitters",
+      "Neocoms"
+   ],
+   "Integrity Response Drones":[
+      "Gel-Matrix Biopaste",
+      "Hazmat Detection Systems",
+      "Planetary Vehicles"
+   ],
+   "Nano-Factory":[
+      "Reactive Metals",
+      "Industrial Explosives",
+      "Ukomi Superconductors"
+   ],
+   "Organic Mortar Applicators":[
+      "Condensates",
+      "Robotics",
+      "Bacteria"
+   ],
+   "Recursive Computing Module":[
+      "Guidance Systems",
+      "Synthetic Synapses",
+      "Transcranial Microcontrollers"
+   ],
+   "Self-Harmonizing Power Core":[
+      "Camera Drones",
+      "Hermetic Membranes",
+      "Nuclear Reactors"
+   ],
+   "Sterile Conduits":[
+      "Smartfab Units",
+      "Vaccines",
+      "Water"
+   ],
+   "Wetware Mainframe":[
+      "Biotech Research Reports",
+      "Cryoprotectant Solution",
+      "Supercomputers"
+   ]
+}

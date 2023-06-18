@@ -1,0 +1,47 @@
+{
+   "Water":[
+      "Aqueous Liquids"
+   ],
+   "Industrial Fibers":[
+      "Autotrophs"
+   ],
+   "Reactive Metals":[
+      "Base Metals"
+   ],
+   "Biofuels":[
+      "Carbon Compounds"
+   ],
+   "Proteins":[
+      "Complex Organisms"
+   ],
+   "Silicon":[
+      "Felsic Magma"
+   ],
+   "Toxic Metals":[
+      "Heavy Metals"
+   ],
+   "Electrolytes":[
+      "Ionic Solutions"
+   ],
+   "Bacteria":[
+      "Micro Organisms"
+   ],
+   "Oxygen":[
+      "Noble Gas"
+   ],
+   "Precious Metals":[
+      "Noble Metals"
+   ],
+   "Chiral Structures":[
+      "Non-CS Crystals"
+   ],
+   "Biomass":[
+      "Planktic Colonies"
+   ],
+   "Oxidizing Compound":[
+      "Reactive Gas"
+   ],
+   "Plasmoids":[
+      "Suspended Plasma"
+   ]
+}

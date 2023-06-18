@@ -1,0 +1,107 @@
+{
+   "Biocells":[
+      "Biofuels",
+      "Precious Metals"
+   ],
+   "Construction Blocks":[
+      "Reactive Metals",
+      "Toxic Metals"
+   ],
+   "Consumer Electronics":[
+      "Toxic Metals",
+      "Chiral Structures"
+   ],
+   "Coolant":[
+      "Water",
+      "Electrolytes"
+   ],
+   "Enriched Uranium":[
+      "Toxic Metals",
+      "Precious Metals"
+   ],
+   "Fertilizer":[
+      "Proteins",
+      "Bacteria"
+   ],
+   "Gen. Enhanced Livestock":[
+      "Proteins",
+      "Biomass"
+   ],
+   "Livestock":[
+      "Biofuels",
+      "Proteins"
+   ],
+   "Mechanical Parts":[
+      "Reactive Metals",
+      "Precious Metals"
+   ],
+   "Microfiber Shielding":[
+      "Industrial Fibers",
+      "Silicon"
+   ],
+   "Miniature Electronics":[
+      "Silicon",
+      "Chiral Structures"
+   ],
+   "Nanites":[
+      "Reactive Metals",
+      "Bacteria"
+   ],
+   "Oxides":[
+      "Oxygen",
+      "Oxidizing Compound"
+   ],
+   "Polyaramids":[
+      "Industrial Fibers",
+      "Oxidizing Compound"
+   ],
+   "Polytextiles":[
+      "Industrial Fibers",
+      "Biofuels"
+   ],
+   "Rocket Fuel":[
+      "Electrolytes",
+      "Plasmoids"
+   ],
+   "Silicate Glass":[
+      "Silicon",
+      "Oxidizing Compound"
+   ],
+   "Superconductors":[
+      "Water",
+      "Plasmoids"
+   ],
+   "Supertensile Plastics":[
+      "Oxygen",
+      "Biomass"
+   ],
+   "Synthetic Oil":[
+      "Electrolytes",
+      "Oxygen"
+   ],
+   "Test Cultures":[
+      "Water",
+      "Bacteria"
+   ],
+   "Transmitter":[
+      "Chiral Structures",
+      "Plasmoids"
+   ],
+   "Viral Agent":[
+      "Bacteria",
+      "Biomass"
+   ],
+   "Water-Cooled CPU":[
+      "Water",
+      "Reactive Metals"
+   ],
+   "Reactive Metals":[
+      "Reactive Metals"
+   ],
+   "Bacteria":[
+      "Bacteria"
+   ],
+   "Water":[
+      "Water"
+   ]
+}

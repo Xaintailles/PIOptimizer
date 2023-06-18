@@ -1,0 +1,101 @@
+{
+   "Biotech Research Reports":[
+      "Construction Blocks",
+      "Livestock",
+      "Nanites"
+   ],
+   "Camera Drones":[
+      "Rocket Fuel",
+      "Silicate Glass"
+   ],
+   "Condensates":[
+      "Coolant",
+      "Oxides"
+   ],
+   "Cryoprotectant Solution":[
+      "Fertilizer",
+      "Synthetic Oil",
+      "Test Cultures"
+   ],
+   "Data Chips":[
+      "Microfiber Shielding",
+      "Supertensile Plastics"
+   ],
+   "Gel-Matrix Biopaste":[
+      "Biocells",
+      "Oxides",
+      "Superconductors"
+   ],
+   "Guidance Systems":[
+      "Transmitter",
+      "Water-Cooled CPU"
+   ],
+   "Hazmat Detection Systems":[
+      "Polytextiles",
+      "Transmitter",
+      "Viral Agent"
+   ],
+   "Hermetic Membranes":[
+      "Gen. Enhanced Livestock",
+      "Polyaramids"
+   ],
+   "High-Tech Transmitters":[
+      "Polyaramids",
+      "Transmitter"
+   ],
+   "Industrial Explosives":[
+      "Fertilizer",
+      "Polytextiles"
+   ],
+   "Neocoms":[
+      "Biocells",
+      "Silicate Glass"
+   ],
+   "Nuclear Reactors":[
+      "Enriched Uranium",
+      "Microfiber Shielding"
+   ],
+   "Planetary Vehicles":[
+      "Mechanical Parts",
+      "Miniature Electronics",
+      "Supertensile Plastics"
+   ],
+   "Robotics":[
+      "Consumer Electronics",
+      "Mechanical Parts"
+   ],
+   "Smartfab Units":[
+      "Construction Blocks",
+      "Miniature Electronics"
+   ],
+   "Supercomputers":[
+      "Consumer Electronics",
+      "Coolant",
+      "Water-Cooled CPU"
+   ],
+   "Synthetic Synapses":[
+      "Supertensile Plastics",
+      "Test Cultures"
+   ],
+   "Transcranial Microcontrollers":[
+      "Biocells",
+      "Nanites"
+   ],
+   "Ukomi Superconductors":[
+      "Superconductors",
+      "Synthetic Oil"
+   ],
+   "Vaccines":[
+      "Livestock",
+      "Viral Agent"
+   ],
+   "Reactive Metals":[
+      "Reactive Metals"
+   ],
+   "Bacteria":[
+      "Bacteria"
+   ],
+   "Water":[
+      "Water"
+   ]
+}
