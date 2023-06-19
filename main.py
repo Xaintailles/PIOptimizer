@@ -7,56 +7,11 @@
 
 import pandas as pd
 from resources import get_p_zero_requirements
+from universe import get_region_planets
 
-universeDump = pd.read_csv(r'./data/mapDenormalize.csv')
+df_system,region_df = get_region_planets('Fountain')
 
-invTypes = pd.read_csv(r'./data/invTypes.csv')
-
-planetTypeId = invTypes[invTypes['typeName'].str.startswith('Planet (',na=False)]
-
-allPlanets = pd.merge(universeDump,
-                      planetTypeId,
-                      on='typeID',
-                      how='inner')
-
-goodColumns = [
-    'typeID',
-    'solarSystemID',
-    'constellationID',
-    'regionID',
-    'itemName',
-    'security',
-    'typeName'
-]
-
-allPlanetsCleaned = allPlanets[goodColumns]
-
-allPlanetsCleaned['planetType'] = allPlanetsCleaned['typeName']\
-                                    .str.split(' ', n=1, expand = True)[1]
-allPlanetsCleaned['planetType'] = allPlanetsCleaned['planetType']\
-                                    .str.replace('(','')\
-                                    .str.replace(')','')
-allSystemsCleaned = allPlanetsCleaned.groupby(['solarSystemID', 
-                                               'constellationID', 
-                                               'regionID',
-                                               'security',
-                                               'itemName',
-                                               'typeName'])\
-                                    .size()\
-                                    .to_frame(name = 'count')\
-                                    .reset_index()
-
-fountain = allPlanetsCleaned[allPlanetsCleaned['regionID'] == 10000058]
-fountain['itemName'] = fountain.itemName.str.split(" ", expand = True)
-fountain = fountain[['itemName', 'planetType']]
-fountain = pd.DataFrame(fountain.groupby(['itemName','planetType'])['itemName']\
-                        .count())
-fountain.columns = ['count']
-fountain = fountain.reset_index()
-
-df_system = pd.DataFrame(fountain['itemName'].unique(), columns=(['itemName']))
-df_system['key'] = '0'
-
+#Need to work on making that work for all sorts of p levels, right now only tested it for Robotics
 result_set = get_p_zero_requirements(data_folder='data', needed_p='Robotics')
 
 planets_requirements = result_set['p_zero_requirements']
@@ -91,7 +46,7 @@ for iterator in df_planets_requirement['index']:
     #Cross-join the requirements and the actuals
     #Create a column showing if there are enough planet of each type
     df_2 = df.merge(df_system, on='key')
-    df_2 = df_2.merge(fountain, on=['itemName','planetType'], how='left')
+    df_2 = df_2.merge(region_df, on=['itemName','planetType'], how='left')
     df_2['viable'] = df_2.apply(lambda row: row.count_x <= row.count_y, axis = 1)
     
     #Create a new df that contains each system and if it's viable
